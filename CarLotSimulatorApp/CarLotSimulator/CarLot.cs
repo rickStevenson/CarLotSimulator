@@ -8,16 +8,14 @@ namespace CarLotSimulator
 {
     internal class CarLot
     {
-        //Create a CarLot class
-        //It should have at least one property: a List of cars
-        //Instantiate a Carlot at the beginning of the program and as you create a car add the car to the list.
-        //At the end iterate through the list printing each of car's Year, Make, and Model to the console
+        public static int numberOfCars;//Added this for Static Keyword Exercise 2
 
         public List<Car> Cars { get; set; } = new List<Car>();
 
         public void AddCar(Car car)
         {
             Cars.Add(car);
+            numberOfCars++;//Added this for Static Keyword Exercise 2
         }
         public void PrintCarDetails()
         {
